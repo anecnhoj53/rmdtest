@@ -8,23 +8,25 @@ output:
   pdf_document: default
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 
 # Generate data
 
-```{r}
+
+```r
 x = rnorm(1e5)
 y = rnorm(1e5)
 ```
 
 
-```{r}
+
+```r
 library(ggplot2)
 
 ggplot(data = data.frame(x = x, y = y), aes(x,y)) + geom_point()
 ```
+
+![](Simulation_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
 
 

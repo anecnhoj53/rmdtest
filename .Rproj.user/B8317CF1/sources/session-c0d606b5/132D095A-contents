@@ -3,7 +3,8 @@ title: "Simulation"
 author: "Ethan"
 date: "2022-09-11"
 output:
-  html_document: default
+  html_document:
+    keep_md: true
   pdf_document: default
 ---
 
