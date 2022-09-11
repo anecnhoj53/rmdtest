@@ -1,0 +1,29 @@
+---
+title: "Simulation"
+author: "Ethan"
+date: "2022-09-11"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Generate data
+
+```{r}
+x = rnorm(1e5)
+y = rnorm(1e5)
+```
+
+
+```{r}
+library(ggplot2)
+
+ggplot(data = data.frame(x = x, y = y), aes(x,y)) + geom_point()
+```
+
+
